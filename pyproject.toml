@@ -1,0 +1,28 @@
+[tool.black]
+line-length = 100
+target-version = ['py310']
+
+[tool.ruff]
+line-length = 100
+ignore = ["D203"]
+show-source = true
+statistics = true
+
+[tool.poetry]
+name = "ccs-aggregator"
+version = "0.1.0"
+description = "A credit card statement aggregator to help you analyse and undestand credit card expenses."
+authors = ["Ritvik Dayal <ritvikr1605@gmail.com>"]
+license = "GNU GENERAL PUBLIC LICENSE Version 3"
+readme = "README.md"
+package-mode = false
+
+[tool.poetry.dependencies]
+python = "^3.10"
+fastapi = "^0.115.2"
+pandas = "^2.2.3"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
