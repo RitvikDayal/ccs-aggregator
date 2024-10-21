@@ -40,4 +40,6 @@ class Settings(BaseSettings):
 
     Logger: logging.Logger = logging.getLogger(APP_NAME)
 
+    PREFIX: str = "ccs-aggregator/api"
+
 settings = Settings()
